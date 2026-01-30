@@ -8,10 +8,10 @@ const About = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const highlights = [
-    { icon: Terminal, label: "Backend First", desc: "APIs, servers, databases" },
-    { icon: Cpu, label: "System Thinker", desc: "Architecture & design" },
-    { icon: Shield, label: "Security Focused", desc: "Secure by default" },
-    { icon: Layers, label: "Scalable", desc: "Built to grow" },
+    { icon: Terminal, label: "Production-Grade", desc: "Battle-tested systems" },
+    { icon: Cpu, label: "System Architect", desc: "End-to-end design" },
+    { icon: Shield, label: "Security-First", desc: "OWASP compliant" },
+    { icon: Layers, label: "Performance-Driven", desc: "Optimized at scale" },
   ];
 
   return (
@@ -33,32 +33,34 @@ const About = () => {
             {/* Main content */}
             <div className="lg:col-span-3 space-y-6">
               <p className="text-muted-foreground text-lg leading-relaxed">
-                I'm <span className="text-foreground font-medium">Ahmed Salah Fathy Sotohy</span>, 
-                a backend developer and system-oriented engineer currently studying 
-                Computer & Information Technology. My focus is building 
-                <span className="text-primary"> reliable, scalable backend systems</span> that 
-                solve real problems.
+                I'm <span className="text-foreground font-medium">Ahmed Salah Fathy Sotohy</span>—a 
+                Backend Engineer specializing in <span className="text-primary">Node.js and NestJS</span>, 
+                with hands-on experience building scalable, secure, and high-performance APIs 
+                that serve thousands of users in production.
               </p>
               
               <p className="text-muted-foreground text-lg leading-relaxed">
-                I don't just write code—I <span className="text-foreground">think in systems</span>. 
-                Before writing a single line, I analyze requirements, plan architecture, 
-                and consider how components will communicate, scale, and fail gracefully.
+                I don't just write endpoints—I <span className="text-foreground">architect systems</span>. 
+                From database schema design to real-time WebSocket implementations, I consider 
+                how every component will <span className="text-primary">communicate, scale, and recover from failure</span>. 
+                My work on medical management systems reduced message latency to under 200ms 
+                and optimized database loads by 35%.
               </p>
 
               <p className="text-muted-foreground text-lg leading-relaxed">
-                My approach combines <span className="text-primary">clean architecture</span> principles 
-                with practical engineering decisions. I believe the best code is 
-                the code you don't have to revisit—secure, tested, and maintainable.
+                I apply <span className="text-primary">Clean, Hexagonal, and Modular architectures</span> to 
+                build systems that are testable, maintainable, and production-ready. 
+                Every API I ship is documented, cached strategically, and built with 
+                security as a first-class concern.
               </p>
 
               {/* Tech focus */}
               <div className="pt-4">
                 <p className="font-mono text-sm text-muted-foreground mb-3">
-                  Currently focused on:
+                  Core stack:
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  {["Node.js", "NestJS", "PostgreSQL", "System Design", "API Architecture"].map((tech) => (
+                  {["NestJS", "PostgreSQL", "Prisma", "WebSocket", "Docker", "CI/CD"].map((tech) => (
                     <span 
                       key={tech}
                       className="px-3 py-1 bg-secondary/50 text-sm font-mono text-muted-foreground rounded border border-border"

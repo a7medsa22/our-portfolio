@@ -35,9 +35,9 @@ const Hero = () => {
             className="flex items-center gap-2 mb-6"
           >
             <span className="text-primary font-mono text-sm">→</span>
-            <span className="text-muted-foreground font-mono text-sm">ahmed.sotohy</span>
+            <span className="text-muted-foreground font-mono text-sm">~/backend</span>
             <span className="text-primary font-mono text-sm">$</span>
-            <span className="font-mono text-sm text-foreground">whoami</span>
+            <span className="font-mono text-sm text-foreground">./deploy --production</span>
           </motion.div>
 
           <motion.h1 
@@ -46,9 +46,9 @@ const Hero = () => {
             transition={{ delay: 0.3 }}
             className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6"
           >
-            <span className="text-foreground">Backend Developer</span>
+            <span className="text-foreground">Backend Engineer</span>
             <br />
-            <span className="text-gradient">Building Scalable Systems</span>
+            <span className="text-gradient">Architecting Systems at Scale</span>
           </motion.h1>
 
           <motion.p 
@@ -57,10 +57,11 @@ const Hero = () => {
             transition={{ delay: 0.4 }}
             className="text-lg sm:text-xl text-muted-foreground max-w-2xl mb-8 leading-relaxed"
           >
-            I architect robust backend solutions, design clean APIs, and build 
-            systems that scale. Focused on <span className="text-primary">security</span>, 
-            <span className="text-primary"> performance</span>, and 
-            <span className="text-primary"> clean architecture</span>.
+            I design and build <span className="text-primary">production-grade distributed systems</span>—from 
+            database architecture to real-time APIs. Specializing in 
+            <span className="text-primary"> performance optimization</span>, 
+            <span className="text-primary"> clean architecture</span>, and 
+            systems that handle <span className="text-primary">thousands of concurrent users</span>.
           </motion.p>
 
           <motion.div 
@@ -85,7 +86,7 @@ const Hero = () => {
             className="flex items-center gap-6"
           >
             <a 
-              href="https://github.com" 
+              href="https://github.com/a7medsa22" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -93,7 +94,7 @@ const Hero = () => {
               <Github className="h-5 w-5" />
             </a>
             <a 
-              href="https://linkedin.com" 
+              href="https://www.linkedin.com/in/ahmed-salah-54822625a" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -101,14 +102,14 @@ const Hero = () => {
               <Linkedin className="h-5 w-5" />
             </a>
             <a 
-              href="mailto:ahmed@example.com"
+              href="mailto:ahmedsalahsotohy123@gmail.com"
               className="text-muted-foreground hover:text-primary transition-colors"
             >
               <Mail className="h-5 w-5" />
             </a>
             <div className="h-4 w-px bg-border" />
             <span className="text-sm text-muted-foreground font-mono">
-              Open to opportunities
+              Cairo, Egypt • Open to opportunities
             </span>
           </motion.div>
         </motion.div>

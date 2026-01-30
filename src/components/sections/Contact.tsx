@@ -10,20 +10,20 @@ const Contact = () => {
   const contactLinks = [
     {
       label: "Email",
-      value: "ahmed.sotohy@example.com",
-      href: "mailto:ahmed.sotohy@example.com",
+      value: "ahmedsalahsotohy123@gmail.com",
+      href: "mailto:ahmedsalahsotohy123@gmail.com",
       icon: Mail,
     },
     {
       label: "GitHub",
-      value: "github.com/ahmedsotohy",
-      href: "https://github.com",
+      value: "github.com/a7medsa22",
+      href: "https://github.com/a7medsa22",
       icon: Github,
     },
     {
       label: "LinkedIn",
-      value: "linkedin.com/in/ahmedsotohy",
-      href: "https://linkedin.com",
+      value: "linkedin.com/in/ahmed-salah-54822625a",
+      href: "https://www.linkedin.com/in/ahmed-salah-54822625a",
       icon: Linkedin,
     },
   ];
@@ -42,9 +42,9 @@ const Contact = () => {
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">Get In Touch</h2>
           
           <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
-            I'm currently open to new opportunities—whether it's a full-time role, 
-            freelance project, or an interesting collaboration. If you're building 
-            something that needs solid backend architecture, let's talk.
+            Looking for a backend engineer who thinks in systems? I'm open to 
+            full-time roles, contract work, or consulting on architecture and 
+            API design. If you're building something that needs to scale, let's talk.
           </p>
 
           {/* CTA Button */}
@@ -59,7 +59,7 @@ const Contact = () => {
               className="group px-8"
               asChild
             >
-              <a href="mailto:ahmed.sotohy@example.com">
+              <a href="mailto:ahmedsalahsotohy123@gmail.com">
                 <Send className="mr-2 h-4 w-4" />
                 Send a Message
                 <ArrowUpRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />

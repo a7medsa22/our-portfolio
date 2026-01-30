@@ -15,40 +15,52 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "E-Commerce API Platform",
-    problem: "Build a scalable backend for a multi-vendor marketplace handling thousands of concurrent users.",
-    solution: "Designed a modular NestJS architecture with PostgreSQL, implementing efficient caching, rate limiting, and role-based access control.",
-    techStack: ["NestJS", "PostgreSQL", "Redis", "Docker", "JWT"],
+    title: "Madisyn - Medical Management System",
+    problem: "Healthcare platforms require secure handling of sensitive patient data, real-time doctor-patient communication, and complex appointment scheduling across multiple stakeholders.",
+    solution: "Led backend development for a production-grade system connecting patients, doctors, and administrators. Implemented WebSocket-based real-time messaging with <200ms latency and optimized database queries reducing load by 35%.",
+    techStack: ["NestJS", "PostgreSQL", "Prisma", "WebSocket", "Docker", "GitHub Actions"],
     highlights: [
-      { icon: Zap, text: "500ms avg response time" },
-      { icon: Shield, text: "RBAC implementation" },
-      { icon: Database, text: "Optimized queries" },
+      { icon: Zap, text: "<200ms message latency" },
+      { icon: Database, text: "35% DB load reduction" },
+      { icon: Shield, text: "HIPAA-aware security" },
     ],
-    github: "https://github.com",
+    github: "https://github.com/a7medsa22/clinic-Management-API-Demo-Version",
   },
   {
-    title: "Real-Time Chat System",
-    problem: "Create a scalable messaging platform supporting real-time communication between users.",
-    solution: "Built WebSocket-based architecture with message persistence, typing indicators, and horizontal scaling capabilities.",
-    techStack: ["Node.js", "Socket.io", "MongoDB", "Redis Pub/Sub", "Express"],
+    title: "AI Knowledge Hub",
+    problem: "Users struggle to organize and retrieve relevant information from large document collections. Traditional search fails to understand semantic context.",
+    solution: "Architected an AI-powered backend platform managing 2000+ documents with semantic search, text summarization, and intelligent retrieval. Implemented caching layer improving search performance by 35%.",
+    techStack: ["NestJS", "PostgreSQL", "MCP Tool Server", "Swagger", "AI Integration"],
     highlights: [
-      { icon: Zap, text: "< 50ms latency" },
-      { icon: Server, text: "Horizontally scalable" },
-      { icon: Database, text: "Message persistence" },
+      { icon: Zap, text: "35% faster search" },
+      { icon: Server, text: "2000+ documents" },
+      { icon: Database, text: "Semantic indexing" },
     ],
-    github: "https://github.com",
+    github: "https://github.com/a7medsa22/Ai-Knowledge-Hub",
   },
   {
-    title: "Authentication Microservice",
-    problem: "Implement a secure, reusable authentication service for multiple applications.",
-    solution: "Created a standalone auth service with JWT, refresh tokens, OAuth integration, and comprehensive security measures.",
-    techStack: ["NestJS", "PostgreSQL", "Prisma", "OAuth 2.0", "JWT"],
+    title: "E-Commerce Backend API",
+    problem: "Building a robust e-commerce platform that handles concurrent users, complex cart operations, and secure payment flows with minimal latency.",
+    solution: "Built and deployed a scalable REST API handling 300+ simulated concurrent users with full authentication, product management, cart/wishlist, checkout, reviews, and admin systems. Achieved 25% latency reduction through query optimization.",
+    techStack: ["Node.js", "Express.js", "MongoDB", "JWT", "MVC Architecture"],
     highlights: [
-      { icon: Shield, text: "OAuth 2.0 & JWT" },
+      { icon: Zap, text: "25% latency reduction" },
+      { icon: Shield, text: "JWT authentication" },
+      { icon: Server, text: "300+ concurrent users" },
+    ],
+    github: "https://github.com/a7medsa22/ecommerce-store",
+  },
+  {
+    title: "Enterprise Auth Template",
+    problem: "Every new project requires implementing authentication from scratch—secure token handling, refresh flows, and role management.",
+    solution: "Created a production-ready authentication microservice template with JWT, refresh token rotation, role-based access control, and comprehensive security measures following OWASP guidelines.",
+    techStack: ["NestJS", "PostgreSQL", "Prisma", "JWT", "RBAC"],
+    highlights: [
+      { icon: Shield, text: "OWASP compliant" },
       { icon: Zap, text: "Token refresh flow" },
-      { icon: Server, text: "Microservice ready" },
+      { icon: Server, text: "Microservice-ready" },
     ],
-    github: "https://github.com",
+    github: "https://github.com/a7medsa22/enterprise-auth-template",
   },
 ];
 
@@ -72,8 +84,8 @@ const Projects = () => {
           </div>
           
           <p className="text-muted-foreground max-w-2xl mb-12">
-            Backend-focused projects showcasing architecture decisions, 
-            scalability patterns, and security implementations.
+            Production systems I've architected—each solving real engineering 
+            challenges around scalability, performance, and security.
           </p>
 
           {/* Projects list */}
@@ -172,9 +184,11 @@ const Projects = () => {
             transition={{ delay: 0.8 }}
             className="text-center mt-12"
           >
-            <Button variant="outline" className="border-border hover:border-primary/50">
-              <Github className="mr-2 h-4 w-4" />
-              View All on GitHub
+            <Button variant="outline" className="border-border hover:border-primary/50" asChild>
+              <a href="https://github.com/a7medsa22" target="_blank" rel="noopener noreferrer">
+                <Github className="mr-2 h-4 w-4" />
+                View All on GitHub
+              </a>
             </Button>
           </motion.div>
         </motion.div>
