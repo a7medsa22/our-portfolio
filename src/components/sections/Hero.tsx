@@ -70,21 +70,30 @@ const Hero = () => {
             transition={{ delay: 0.5 }}
             className="flex flex-wrap gap-4 mb-12"
           >
-            <Button size="lg" className="group">
-              View Projects
-              <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+             <a href="#projects">
+             <Button size="lg" className="group">
+             View Projects
+             <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
-            <Button size="lg" variant="outline" className="border-border hover:border-primary/50 hover:bg-primary/5">
-              Contact Me
-            </Button>
+            </a>
+
+          <a href="#contact">
+         <Button
+         size="lg"
+         variant="outline"
+            className="border-border hover:border-primary/50 hover:bg-primary/5"
+         >
+          Contact Me
+         </Button>
+         </a>
           </motion.div>
 
           <motion.div 
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.6 }}
-            className="flex items-center gap-6"
-          >
+         initial={{ opacity: 0, y: 20 }}
+         animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.5 }}
+       className="flex flex-wrap gap-4 mb-12"
+       >
             <a 
               href="https://github.com/a7medsa22" 
               target="_blank" 
