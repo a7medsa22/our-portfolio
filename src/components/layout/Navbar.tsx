@@ -78,34 +78,40 @@ const Navbar = () => {
         </div>
       </nav>
 
-      {/* Mobile menu */}
-      {isMobileMenuOpen && (
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -20 }}
-          className="md:hidden bg-background/95 backdrop-blur-lg border-b border-border"
+    {/* Mobile menu */}
+{isMobileMenuOpen && (
+  <motion.div
+    initial={{ opacity: 0, y: -20 }}
+    animate={{ opacity: 1, y: 0 }}
+    exit={{ opacity: 0, y: -20 }}
+    className="md:hidden bg-background/95 backdrop-blur-lg border-b border-border"
+  >
+    <div className="section-container py-6 space-y-4">
+      {navLinks.map((link, index) => (
+        <a
+          key={link.href}
+          href={link.href}
+          onClick={() => setIsMobileMenuOpen(false)}
+          className="block py-2 text-muted-foreground hover:text-foreground transition-colors"
         >
-          <div className="section-container py-6 space-y-4">
-            {navLinks.map((link, index) => (
-              <a
-                key={link.href}
-                href={link.href}
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="block py-2 text-muted-foreground hover:text-foreground transition-colors"
-              >
-                <span className="text-primary font-mono text-xs mr-2">
-                  {String(index + 1).padStart(2, '0')}.
-                </span>
-                {link.label}
-              </a>
-            ))}
-            <Button className="w-full mt-4">Resume</Button>
-          </div>
-        </motion.div>
-      )}
-    </motion.header>
-  );
-};
+          <span className="text-primary font-mono text-xs mr-2">
+            {String(index + 1).padStart(2, "0")}.
+          </span>
+          {link.label}
+        </a>
+      ))}
 
-export default Navbar;
+      {/* Resume button */}
+      <a
+        href="https://docs.google.com/document/d/18CIbJBMKAz8EzEm18yIdT4TAW2QTPyiN/edit?usp=sharing&ouid=117682803620334639856&rtpof=true&sd=true"
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={() => setIsMobileMenuOpen(false)}
+      >
+        <Button className="w-full mt-4">
+          Resume
+        </Button>
+      </a>
+    </div>
+  </motion.div>
+)}
