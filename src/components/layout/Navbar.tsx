@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import avatar from "@/assets/avatar.jpg";
 
 const navLinks = [
   { label: "About", href: "#about" },
@@ -37,12 +38,14 @@ const Navbar = () => {
       <nav className="section-container py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 rounded bg-primary flex items-center justify-center text-primary-foreground font-mono font-bold text-sm">
-              AS
-            </div>
+          <a href="#" className="flex items-center gap-3 group">
+            <img
+              src={avatar}
+              alt="Ahmed Sotohy"
+              className="w-9 h-9 rounded-full object-cover border border-border transition-transform group-hover:scale-105"
+            />
             <span className="font-mono text-sm text-muted-foreground group-hover:text-foreground transition-colors hidden sm:block">
-              ahmed.sotohy
+              Ahmed Sotohy
             </span>
           </a>
 
